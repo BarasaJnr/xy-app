@@ -1,5 +1,4 @@
 <script lang="ts">
-	import svelte from 'svelte';
 	import CtaBanner from '$lib/components/slices/callouts/CtaBanner.svelte';
 	import FaqClassic from '$lib/components/slices/faq/FaqClassic.svelte';
 	import FeatureGrid from '$lib/components/slices/features/FeatureGrid.svelte';
@@ -10,6 +9,9 @@
 	import TestimonialsTextWithAvatar from '$lib/components/slices/social-proof/TestimonialsTextWithAvatar.svelte';
 
 	interface Data {
+	seo: {
+		description:string;
+	};
     heroClassic: any;
     staticCompaniesBanner: any;
     leftTextWithMultipleImages: any;
