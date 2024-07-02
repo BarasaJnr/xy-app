@@ -1,5 +1,5 @@
 import { sveltekit } from "@sveltejs/kit/vite";
-import { PageServerLoad } from './$types';
+import type { PageServerLoad } from './$types';
 
 // import { fail, type Actions } from '@sveltejs/kit';
 // import { zfd } from 'zod-form-data';
