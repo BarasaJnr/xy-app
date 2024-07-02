@@ -1,2 +1,32 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import svelte from 'svelte';
+	import CtaBanner from '$lib/components/slices/callouts/CtaBanner.svelte';
+	import FaqClassic from '$lib/components/slices/faq/FaqClassic.svelte';
+	import FeatureGrid from '$lib/components/slices/features/FeatureGrid.svelte';
+	import LeftTextWithMultipleImages from '$lib/components/slices/features/LeftTextWithMultipleImages.svelte';
+	import RightTextWithImage from '$lib/components/slices/features/RightTextWithImage.svelte';
+	import HeroClassic from '$lib/components/slices/hero/HeroClassic.svelte';
+	import StaticCompaniesBanner from '$lib/components/slices/social-proof/StaticCompaniesBanner.svelte';
+	import TestimonialsTextWithAvatar from '$lib/components/slices/social-proof/TestimonialsTextWithAvatar.svelte';
+
+	interface Data {
+    heroClassic: any;
+    staticCompaniesBanner: any;
+    leftTextWithMultipleImages: any;
+    featureGrid: any;
+    rightTextWithImage: any;
+    testimonialsTextWithAvatar: any;
+    faqClassic: any;
+    ctaBanner: any;
+  }
+	export let data: Data;
+</script>
+
+<HeroClassic data={data.heroClassic} />
+<StaticCompaniesBanner data={data.staticCompaniesBanner} />
+<LeftTextWithMultipleImages data={data.leftTextWithMultipleImages} />
+<FeatureGrid data={data.featureGrid} />
+<RightTextWithImage data={data.rightTextWithImage} />
+<TestimonialsTextWithAvatar data={data.testimonialsTextWithAvatar} />
+<FaqClassic data={data.faqClassic} />
+<CtaBanner data={data.ctaBanner} />
