@@ -23,7 +23,7 @@ export const load: PageServerLoad = async () => {
 	return {
 		seo: {
 			title: 'Contact',
-			description: 'Metadescription for contact page'
+			description: 'Meta description for contact page'
 		},
 		heroClassicSmall,
 		contact
