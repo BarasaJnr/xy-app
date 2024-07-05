@@ -65,5 +65,5 @@
 	</div>
 {/if}
 <div class="mt-10 block text-center">
-	<ButtonLink on:click={mailto}>or send us and e-mail</ButtonLink>
+	<ButtonLink on:click={mailto}>or send us an email</ButtonLink>
 </div>
