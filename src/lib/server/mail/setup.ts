@@ -19,4 +19,6 @@ async function checkConnection() {
 	}
 }
 
-checkConnection();
+checkConnection().catch((error) => {
+	console.error(error);
+});
