@@ -3,7 +3,6 @@
 	import Input from './Input.svelte';
 	import Textarea from './Textarea.svelte';
 	import Honeypot from './Honeypot.svelte';
-	import { PUBLIC_EMAIL } from '$env/static/public';
 	import ButtonLink from '../base/ButtonLink.svelte';
 	import { tick } from 'svelte';
 	import { zfd } from 'zod-form-data';
@@ -48,7 +47,7 @@
 	}
 
 	function mailto() {
-		const url = `mailto:${PUBLIC_EMAIL}`;
+		const url = `mailto:`;
 		location.href = url;
 	}
 

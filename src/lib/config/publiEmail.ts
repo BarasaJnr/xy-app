@@ -1,0 +1,1 @@
+export const PUBLIC_EMAIL = 'your-email@example.com';

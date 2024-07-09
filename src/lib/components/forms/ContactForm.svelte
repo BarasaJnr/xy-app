@@ -6,7 +6,7 @@
 	import Input from './Input.svelte';
 	import Textarea from './Textarea.svelte';
 	import Honeypot from './Honeypot.svelte';
-	import { PUBLIC_EMAIL } from '$env/static/public';
+	import { PUBLIC_EMAIL } from '$lib/config/publicEmail';
 	import ButtonLink from '../base/ButtonLink.svelte';
 
 	let loading = false;
